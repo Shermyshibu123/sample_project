@@ -1,0 +1,339 @@
+{
+  "pAssets": [
+    {
+      "name": "Video Wall",
+      "type": "video_wall",
+      "meta_data": [
+        {
+          "placeholder": "Streaming video url",
+          "title": "Video URL",
+          "name": "video_url",
+          "input_type": "text",
+          "required": true
+        },
+        {
+          "placeholder": "Render Object Name",
+          "title": "Render Object",
+          "name": "render_object",
+          "input_type": "text",
+          "required": true
+        },
+        {
+          "title": "Volume",
+          "name": "volume",
+          "input_type": "number",
+          "required": true,
+          "min": 0,
+          "max": 1
+        },
+        {
+          "title": "Stereoscopic",
+          "name": "is_stereoscopic",
+          "input_type": "switch",
+          "checkedTitle": "Yes",
+          "uncheckedTitle": "No"
+        },
+        {
+          "title": "Auto Play",
+          "name": "auto_play",
+          "input_type": "switch",
+          "checkedTitle": "Yes",
+          "uncheckedTitle": "No"
+        },
+        {
+          "title": "Loop",
+          "name": "loop",
+          "input_type": "switch",
+          "checkedTitle": "Yes",
+          "uncheckedTitle": "No"
+        }
+      ]
+    },
+    {
+      "name": "Mirror",
+      "type": "mirror",
+      "meta_data": [
+        {
+          "placeholder": "Render Object Name",
+          "title": "Render Object",
+          "name": "render_object",
+          "input_type": "text",
+          "required": true
+        },
+        {
+          "placeholder": "Streaming video url",
+          "title": "Video URL",
+          "name": "video_url",
+          "input_type": "text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "Spot Light",
+      "type": "spot_light",
+      "meta_data": [
+        {
+          "placeholder": "Color Hex",
+          "title": "Color",
+          "name": "color",
+          "input_type": "text",
+          "required": true
+        },
+        {
+          "title": "Intensity",
+          "name": "intensity",
+          "input_type": "number",
+          "required": true
+        },
+        {
+          "title": "Range",
+          "name": "range",
+          "input_type": "number",
+          "required": true
+        },
+        {
+          "title": "Inner angle",
+          "name": "inner_angle",
+          "input_type": "number",
+          "required": true
+        },
+        {
+          "title": "Outer angle",
+          "name": "outer_angle",
+          "input_type": "number",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "Point Light",
+      "type": "point_light",
+      "meta_data": [
+        {
+          "placeholder": "Color Hex",
+          "title": "Color",
+          "name": "color",
+          "input_type": "text",
+          "required": true
+        },
+        {
+          "title": "Intensity",
+          "name": "intensity",
+          "input_type": "number",
+          "required": true
+        },
+        {
+          "title": "Range",
+          "name": "range",
+          "input_type": "number",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "CFF Survey",
+      "type": "CFF_survey",
+      "meta_data": [
+        {
+          "title": "Do you find it difficult to meet all your expenses each month?",
+          "name": "mnthExpense",
+          "input_type": "switch",
+          "checkedTitle": "Yes",
+          "uncheckedTitle": "No",
+          "score": {
+            "true": 0,
+            "false": 1
+          }
+        },
+        {
+          "title": "Would you struggle to pay for an unexpected expense or emergency (e.g., car breakdowns or unplanned medical expense)?",
+          "name": "unexpectedExpense",
+          "input_type": "switch",
+          "checkedTitle": "Yes",
+          "uncheckedTitle": "No",
+          "score": {
+            "true": 0,
+            "false": 1
+          }
+        },
+        {
+          "title": "Do you carry a balance on your credit card that you do not pay off each month?",
+          "name": "creditBalance",
+          "input_type": "switch",
+          "checkedTitle": "Yes",
+          "uncheckedTitle": "No",
+          "score": {
+            "true": 0,
+            "false": 1
+          }
+        },
+        {
+          "title": "Does your financial situation cause you stress?",
+          "name": "financialStress",
+          "input_type": "switch",
+          "checkedTitle": "Yes",
+          "uncheckedTitle": "No",
+          "score": {
+            "true": 0,
+            "false": 3
+          }
+        },
+        {
+          "title": "If you or someone in your household were out of work for an extended period of time, are you confident the financial needs of those who depend on you would be met?",
+          "name": "outOfWork",
+          "input_type": "switch",
+          "checkedTitle": "Yes",
+          "uncheckedTitle": "No",
+          "score": {
+            "true": 3,
+            "false": 0
+          }
+        },
+        {
+          "title": "If you or someone in your household were to die are you confident the financial needs of those who depend on you would be met?",
+          "name": "personDeath",
+          "input_type": "switch",
+          "checkedTitle": "Yes",
+          "uncheckedTitle": "No",
+          "score": {
+            "true": 4,
+            "false": 0
+          }
+        },
+        {
+          "title": "Do you have a will?",
+          "name": "hasWill",
+          "input_type": "switch",
+          "checkedTitle": "Yes",
+          "uncheckedTitle": "No",
+          "score": {
+            "true": 1,
+            "false": 0
+          }
+        },
+        {
+          "placeholder": "Amount currently saved in retirement plan",
+          "title": "Roughly, how much do you have currently saved in you retirement plans (401k, IRAs, etc)?",
+          "name": "amountCurrentlySaved",
+          "input_type": "dropdown",
+          "values": [
+            "None",
+            "Less than $50,000",
+            "$50,000 to $100,000",
+            "$100,000 to $250,000",
+            "More than $250,000"
+          ],
+          "required": true,
+          "score": {
+            "None": 0,
+            "Less than $50,000": 1,
+            "$50,000 to $100,000": 2,
+            "$100,000 to $250,000": 4,
+            "More than $250,000": 5
+          }
+        },
+        {
+          "title": "Do you currently have a loan against your retirement plan?",
+          "name": "hasLoanAgainstRetirementPlan",
+          "input_type": "switch",
+          "checkedTitle": "Yes",
+          "uncheckedTitle": "No",
+          "score": {
+            "true": 0,
+            "false": 1
+          }
+        },
+        {
+          "placeholder": "Saving outside of retirement plans",
+          "title": "How much savings do you have outside of your retirement plans, excluding your checking account?",
+          "name": "savingOutsideRetirementPlan",
+          "input_type": "dropdown",
+          "values": [
+            "None",
+            "Less than $50,000",
+            "$50,000 to $100,000",
+            "$100,000 to $250,000",
+            "More than $250,000"
+          ],
+          "required": true,
+          "score": {
+            "None": 0,
+            "Less than $50,000": 1,
+            "$50,000 to $100,000": 2,
+            "$100,000 to $250,000": 4,
+            "More than $250,000": 5
+          }
+        },
+        {
+          "title": "Are you comfortable making investment decisions?",
+          "name": "isComfortableInvestDecision",
+          "input_type": "switch",
+          "checkedTitle": "Yes",
+          "uncheckedTitle": "No",
+          "score": {
+            "true": 3,
+            "false": 0
+          }
+        },
+        {
+          "placeholder": "Describe financial situation",
+          "title": "Which best describes your financial situation:",
+          "name": "financialSituation",
+          "input_type": "dropdown",
+          "values": [
+            "Because of my financial struggles, I feel like I will never have the things I want in life",
+            "I am living within my means and just starting to save for the future",
+            "I have been saving but I am concerned the money I have or will save won't enough to meet all my goals",
+            "I feel financially secure and can enjoy life because of the way I am managing my money"
+          ],
+          "required": true,
+          "score": {
+            "Because of my financial struggles, I feel like I will never have the things I want in life": 0,
+            "I am living within my means and just starting to save for the future": 1,
+            "I have been saving but I am concerned the money I have or will save won't enough to meet all my goals": 3,
+            "I feel financially secure and can enjoy life because of the way I am managing my money": 4
+          }
+        },
+        {
+          "placeholder": "Important financial planning",
+          "title": "Which financial planning need is most important to you right now:",
+          "name": "importantFinancialPlanning",
+          "input_type": "dropdown",
+          "values": [
+            "Help with debt and cash flow management",
+            "Goal planning and funding",
+            "Investment planning",
+            "Retirement planning",
+            "Wealth Management/Asset Protection/Helping Others",
+            "Don't know/too many"
+          ],
+          "required": true,
+          "score": {
+            "Help with debt and cash flow management": 0,
+            "Goal planning and funding": 2,
+            "Investment planning": 3,
+            "Retirement planning": 4,
+            "Wealth Management/Asset Protection/Helping Others": 5,
+            "Don't know/too many": 0
+          }
+        },
+        {
+          "placeholder": "Age Group",
+          "title": "In which age group do you belong?",
+          "name": "ageGroup",
+          "input_type": "dropdown",
+          "values": [
+            "Under 30 years old",
+            "30 to 40 years old",
+            "41 to 50 years old",
+            "51 to 50 years old",
+            "over 50years old",
+            "Prefer not to disclose"
+          ],
+          "required": true
+        }
+      ]
+    }
+  ]
+}
