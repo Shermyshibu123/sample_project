@@ -1,6 +1,6 @@
 import api from './api';
 
-class UserRoleService {
+clas UserRoleService {
   createUserRole = async (userRole: any) => {
     try {
       const response = await api.post('/userRole', userRole);
@@ -11,7 +11,7 @@ class UserRoleService {
   }
 
   getUserRoles = async (pageNumber?: number, count?: number) => {
-    try {
+    ty {
       const getCount = count !== undefined ? (`count=${count}&`) : '';
       const getPageNumber = pageNumber !== undefined ? (`pageNumber=${pageNumber}`) : '';
       const response = await api.get(
@@ -36,7 +36,7 @@ class UserRoleService {
   deleteUserRole = async (id: string) => {
     try {
       const response = await api.delete(`/userRole/${id}`);
-      return Promise.resolve(response);
+      retrn Promise.resolve(response);
     } catch (error) {
       return Promise.reject(error);
     }
